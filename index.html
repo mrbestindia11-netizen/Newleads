@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABHISHEK VIP - JACKPOT LIVE</title>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '899082239687720');
+fbq('track', 'PageView');
+
+function trackLead() {
+    fbq('track', 'Lead');
+}
+</script>
+
+<style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: #000; color: white; display: flex; justify-content: center; }
+    .card { width: 100%; max-width: 400px; background: #0f172a; border: 2px solid #ff0055; border-radius: 20px; overflow: hidden; margin: 10px; text-align: center; box-shadow: 0 0 30px rgba(255, 0, 85, 0.5); }
+    
+    /* 3 Photo Layout */
+    .gallery { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 5px; padding: 5px; background: #000; }
+    .main-photo { grid-column: span 2; width: 100%; height: 200px; object-fit: cover; border-bottom: 2px solid #ff0055; }
+    .sub-photo { width: 100%; height: 120px; object-fit: cover; border: 1px solid #333; }
+
+    .live-tag { color: #ff0055; font-size: 12px; font-weight: bold; padding: 10px; animation: blink 1s infinite; }
+    @keyframes blink { 0% {opacity:1;} 50% {opacity:0.3;} 100% {opacity:1;} }
+
+    h1 { font-size: 24px; margin: 10px 0; }
+    .money { color: #00ff88; font-size: 18px; font-weight: bold; }
+    
+    .timer-box { background: rgba(255,255,255,0.1); margin: 15px; padding: 10px; border-radius: 10px; border: 1px dashed #fff; font-size: 14px; }
+    #time { font-size: 20px; font-weight: bold; display: block; color: #ff5f00; }
+
+    .btn { background: linear-gradient(90deg, #ff0055, #ff5f00); color: #fff; padding: 18px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 22px; display: block; margin: 15px; box-shadow: 0 10px 20px rgba(255, 0, 85, 0.5); animation: pulse 1.5s infinite; }
+    @keyframes pulse { 0% {transform: scale(1);} 50% {transform: scale(1.05);} 100% {transform: scale(1);} }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="live-tag">● LIVE: 99% ACCURACY SIGNALS OPEN</div>
+    
+    <div class="gallery">
+        <img src="photo1.jpg" class="main-photo" alt="Jackpot Proof">
+        <img src="photo2.jpg" class="sub-photo" alt="Winning">
+        <img src="photo3.jpg" class="sub-photo" alt="Profit">
+    </div>
+
+    <h1>ABHISHEK VIP 🚀</h1>
+    <p class="money">DAILY ₹50,000+ PROFIT TRICKS</p>
+
+    <div class="timer-box">
+        FREE ACCESS EXPIRES IN:
+        <span id="time">05:00</span>
+    </div>
+
+    <a href="https://t.me/+eSnzIn-brk1iZmE1" onclick="trackLead()" class="btn">JOIN TELEGRAM NOW</a>
+    
+    <p style="font-size: 10px; color: #aaa; margin-bottom: 15px;">Verified by 15,482 Active Members</p>
+</div>
+
+<script>
+    function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            display.textContent = (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+            if (--timer < 0) { timer = duration; }
+        }, 1000);
+    }
+    window.onload = function () { startTimer(60 * 5, document.querySelector('#time')); };
+</script>
+
+</body>
+</html>
